@@ -1,0 +1,68 @@
+:root {
+    --font-family: 'Comfortaa', cursive;
+    --font-family2: 'Miltonian', cursive;
+    --firstcolor: #0288dc;
+    --secondcolor: #FFC83D;
+}
+
+body {
+    font-family: var(--font-family);
+}
+
+.hi, .dev {
+    font-family: var(--font-family2);
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.name {
+    font-size: 76px;
+    font-weight: 900;
+}
+
+.about, .contact {
+    text-decoration: none;
+    letter-spacing: 0.2rem;
+    cursor: pointer;
+    padding: 20px;
+    border: 1px solid var(--firstcolor);
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--secondcolor);
+    margin: 20px;
+    box-shadow: 3px 3px 3px 0;
+}
+
+.homepageLink {
+    text-decoration: none;
+    cursor: pointer;
+    padding: 10px;
+    background-color: var(--firstcolor);
+    border: 1px solid var(--firstcolor);
+    border-radius: 15px;
+    font-size: 14px;
+    color: var(--secondcolor);
+    margin: 20px;
+    box-shadow: 3px 3px 3px 0;
+}
+
+.h2-about {
+    font-size: 44px;
+}
+
+.app_card{
+    background-color: rgb(230, 245, 255);
+    border-radius: 15px;    
+}
+.app_card>img{
+    filter: opacity(0.8);
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px 0px rgb(163, 218, 255);
+}
+.app_name{
+    font-size: 34px;
+    font-weight: 700;
+}
