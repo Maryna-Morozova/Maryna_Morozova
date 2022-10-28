@@ -11,6 +11,7 @@ body {
 
 .container{
     background-color: #F8F9FA;
+    max-width: 100%
 }
 
 .hi, .dev {
@@ -67,6 +68,9 @@ body {
     font-size: 34px;
     font-weight: 700;
 }
+.intro{
+    margin: 50px;
+}
 
 @media (max-width: 576px){
     .container {
@@ -86,5 +90,8 @@ body {
     }
     .about{
         width: 100%;
+    }
+    .intro{
+        margin: 0;
     }
 }
