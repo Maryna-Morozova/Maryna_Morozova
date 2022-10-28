@@ -9,8 +9,11 @@ body {
     font-family: var(--font-family);
 }
 
+.container{
+    background-color: #F8F9FA;
+}
+
 .hi, .dev {
-    font-family: var(--font-family2);
     font-size: 38px;
     font-weight: bold;
 }
