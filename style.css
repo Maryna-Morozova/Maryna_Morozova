@@ -57,12 +57,31 @@ body {
 }
 .app_card>img{
     filter: opacity(0.8);
-    max-width: 100%;
-    height: auto;
     border-radius: 15px;
     box-shadow: 5px 5px 10px 0px rgb(163, 218, 255);
 }
 .app_name{
     font-size: 34px;
     font-weight: 700;
+}
+
+@media (max-width: 576px){
+    .container {
+        padding: 0 50px;
+    }
+    .navbar-brand, .navbar-toggler{
+        margin: 0 auto;
+    }
+    .email{
+        word-wrap: break-word;
+    }
+    .name{
+        font-size: 44px;
+    }
+    .dev{
+        font-size: 19px;
+    }
+    .about{
+        width: 100%;
+    }
 }
