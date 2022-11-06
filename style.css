@@ -67,6 +67,10 @@ body {
     min-width: 150px;
 }
 
+.aboutmyself{
+    font-size: 24px;
+}
+
 svg{
     width: 40px;
     fill: var(--firstcolor);
@@ -100,7 +104,7 @@ svg{
 }
 
 .cert_card:hover{
-    transform: scale(1.5);
+    transform: scale(1.2);
     z-index: 1;
 }
 
