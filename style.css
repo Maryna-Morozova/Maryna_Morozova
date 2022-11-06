@@ -39,7 +39,7 @@ body {
 }
 
 .contacts-container{
-    height: 99vh;
+    min-height: 99vh;
 }
 
 .hi, .dev {
@@ -52,7 +52,7 @@ body {
     font-weight: 900;
 }
 
-.about, .contact {
+.about, .contact, .contactme {
     text-decoration: none;
     letter-spacing: 0.2rem;
     cursor: pointer;
@@ -73,8 +73,9 @@ svg{
     margin-right: 10px;
 }
 
-.h2-about {
+.heading {
     font-size: 44px;
+    text-shadow: 1px 1px 6px rgb(163, 218, 255);
 }
 
 .app_card{
@@ -93,10 +94,9 @@ svg{
     box-shadow: 5px 5px 10px 0px rgb(163, 218, 255);
 }
 
-.cert_card>img {
-    filter: opacity(0.8);
+.cert, .myPhoto {
     border-radius: 15px;
-    box-shadow: 5px 5px 10px 0px rgb(163, 218, 255);
+    box-shadow: 0px 0px 15px 5px rgb(163, 218, 255);
 }
 
 .cert_card:hover{
@@ -117,33 +117,51 @@ svg{
     font-size: 24px;
 }
 
-/* footer>p{
-    margi
-} */
+.contact-box{
+    background-color: rgb(230, 245, 255);
+}
+
+.contact-box_heading{
+    font-size: 44px;
+}
+
+.contact-box_text{
+    font-size: 20px;
+}
+
+.social-links>p>.contacts{
+    font-size: 18px;
+}
+
+.arrow_up{
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+}
+
+@media screen and (min-width: 1280px) {
+    .projects{
+        width: 75%;
+    }
+}
 
 @media screen and (min-width: 768px) and (max-width: 991px){
     .app_card {
-        width: 70%;
         margin: 0 auto;
     }
     .navbar-brand{
         font-size: 18px;
     }
-    .app_card{
-        width: 50%;
-    }
 }
 
-@media screen and (min-width: 400px) and (max-width: 575px){
+@media screen  and (max-width: 767px){
     .container {
         padding: 0 50px;
     }
     .navbar-brand, .navbar-toggler{
         margin: 0 auto;
     }
-    .email{
-        word-wrap: break-word;
-    }
+    
     .name{
         font-size: 44px;
     }
@@ -158,13 +176,25 @@ svg{
     }
     .about, .contact{
         display: block;
-        width: 40%;
+        width: 50%;
         margin: 10px auto;
+    }
+    .contacts {
+        font-size: 18px;
     }
 }
 
-@media (max-width: 399px){
+@media (max-width: 480px){
     .projects{
         display: none;
+    }
+    .contacts_section>p{
+        margin-top: 0;
+    }
+    .contacts_section>p>a{
+        font-size: 16px;
+    }
+    .contacts{
+        font-size: 16px;
     }
 }
