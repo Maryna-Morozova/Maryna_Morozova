@@ -9,9 +9,28 @@ body {
     font-family: var(--font-family);
 }
 
+.navbar{
+    font-size: 22px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.navbar-brand:hover, .nav-link:hover{
+    color: var(--firstcolor);
+}
+
+.navbar-brand{
+    font-size: 26px;
+}
+
+.nav-link{
+    padding-bottom: 5px;
+}
+
 .container{
     background-color: #F8F9FA;
-    max-width: 100%
+    max-width: 100%;
 }
 
 .hi, .dev {
@@ -39,23 +58,37 @@ body {
     min-width: 150px;
 }
 
+svg{
+    width: 40px;
+    fill: var(--firstcolor);
+    margin-right: 10px;
+}
+
 .h2-about {
     font-size: 44px;
 }
 
 .app_card{
     background-color: rgb(230, 245, 255);
-    border-radius: 15px;    
+    border-radius: 15px;  
 }
+
+.app_card:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
 .app_card>img{
     filter: opacity(0.8);
     border-radius: 15px;
     box-shadow: 5px 5px 10px 0px rgb(163, 218, 255);
 }
+
 .app_name{
     font-size: 34px;
     font-weight: 700;
 }
+
 .intro{
     margin: 50px;
 }
